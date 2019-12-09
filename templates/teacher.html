@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+<!--    {{ name }}-->
+
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+    </tr>
+    </thead>
+
+    {% for data in teacheruse %}
+    <tr><td>{{ data["name"] }}</td><td>{{ data["email"] }}</td><td>{{ data["password"] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
